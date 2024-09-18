@@ -33,15 +33,13 @@ async function sendEmail() {
 }
 
 async function main() {
-  while (true) {
-    try {
-      await sendEmail()
-      console.log('Email sent successfully. Waiting 1 week before sending the next one...')
-    } catch (error) {
-      console.error('Failed to send email:', error)
-    }
-    await new Promise(resolve => setTimeout(resolve, 7 * 24 * 60 * 60 * 1000))
+  try {
+    await sendEmail()
+    console.log('Email sent successfully. Waiting 1 week before sending the next one...')
+  } catch (error) {
+    console.error('Failed to send email:', error)
   }
+  await new Promise(resolve => setTimeout(resolve, 7 * 24 * 60 * 60 * 1000))
 }
 
 main().catch(console.error)
