@@ -37,3 +37,15 @@ Click "New Secret." Set your test email to `EMAIL_USER` and your password to `EM
 Click "Save Secret." Next, create a new project and connect the project to your GitHub repository:
 
 ![connect to repo on semaphore](public/03-connect-repo.webp)
+
+This will start running your workflow:
+
+![semaphore workflow running](public/04-workflow-running.webp)
+
+Click "Send Email" to view the workflow logs:
+
+![send email logs](public/05-send-email-logs.webp)
+
+Your logs should include a message saying, "Message sent" along with a preview URL. Open the preview URL to view the example email:
+
+![example email](public/06-example-email.webp)
