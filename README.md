@@ -36,3 +36,4 @@ Click "New Secret." Set your test email to `EMAIL_USER` and your password to `EM
 
 Click "Save Secret." Next, create a new project and connect the project to your GitHub repository:
 
+![connect to repo on semaphore](public/03-connect-repo.webp)
