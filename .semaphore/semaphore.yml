@@ -1,0 +1,21 @@
+# .semaphore/semaphore.yml
+
+version: v1.0
+name: Send Weekly Email
+agent:
+  machine:
+    type: e1-standard-2
+    os_image: ubuntu2004
+
+blocks:
+  - name: Send Email
+    task:
+      secrets:
+        - name: email-credentials
+      jobs:
+        - name: Send Email
+          commands:
+            - checkout
+            - sem-version node 20
+            - npm install nodemailer
+            - node send-email.js

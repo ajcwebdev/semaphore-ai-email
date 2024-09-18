@@ -1,0 +1,97 @@
+<!-- email-template.html -->
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weekly AI Newsletter</title>
+    <style>
+        @media screen and (max-width: 600px) {
+            .container {
+                width: 100% !important;
+            }
+            .content {
+                padding: 10px !important;
+            }
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #f4f4f4;
+        }
+        .content {
+            padding: 20px;
+        }
+        .header {
+            background-color: #2c3e50;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px;
+        }
+        .section {
+            background-color: #ffffff;
+            margin-bottom: 20px;
+            padding: 15px;
+            border-radius: 5px;
+        }
+        .footer {
+            background-color: #34495e;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Weekly AI Newsletter</h1>
+            <p>Your weekly digest of AI news and insights</p>
+        </header>
+        <main class="content">
+            <section class="section">
+                <h2>Top Articles</h2>
+                <article>
+                    <h3>Why you should write your own LLM benchmarks — with Nicholas Carlini, Google DeepMind</h3>
+                    <p>The article features an interview with Nicholas Carlini, a research scientist at DeepMind, discussing his views on AI and his work in AI security. Key points include:</p>
+                    <ul>
+                      <li>Carlini wrote a viral blog post "How I Use AI" detailing practical ways he uses AI tools in his daily work as a security researcher. He emphasizes focusing on what AI can do for individuals rather than trying to have a universal answer.</li>
+                      <li>He created a domain-specific language for writing personalized LLM benchmarks, arguing that more people should make benchmarks tailored to their specific needs rather than relying solely on standardized tests.</li>
+                      <li>Carlini discusses his research in AI security, including work on data poisoning, model stealing, and extracting training data from language models. He emphasizes the importance of studying real-world vulnerabilities in AI systems.</li>
+                      <li>He explains his preference for focusing on attacking rather than defending AI systems, stating that he finds it more motivating and believes he can contribute more effectively by identifying vulnerabilities.</li>
+                    </ul>
+                </article>
+                <article>
+                    <h3>Is finetuning GPT4o worth it? — with Alistair Pullen, Cosine (Genie)</h3>
+                    <p>This article discusses an interview with Alistair Pullen, CEO and co-founder of Cosine, about their new AI coding agent called Genie. Key points include:</p>
+                    <ul>
+                      <li>Genie achieved state-of-the-art results on the SWE-Bench coding benchmark, outperforming other solutions by a significant margin.</li>
+                      <li>Cosine worked closely with OpenAI to fine-tune GPT-4 on billions of tokens of synthetic code data, focusing on reproducing the process of how human software engineers work rather than just training on finished code.</li>
+                      <li>Genie uses a four-stage workflow: finding files, planning actions, writing code, and running tests. It can interact with GitHub and CI systems to execute and test code changes.</li>
+                      <li>The team faced challenges in areas like code retrieval, context window limitations, and balancing different programming languages in the training data.</li>
+                      <li>Cosine is looking to expand Genie's capabilities, increase their dataset size, and potentially customize models for specific customers' codebases.</li>
+                    </ul>
+                </article>
+            </section>
+        </main>
+        <footer class="footer">
+            <p>&copy; 2024 Weekly AI Newsletter. All rights reserved.</p>
+            <p>
+                <a href="#">Unsubscribe</a> | 
+                <a href="#">View in browser</a> | 
+                <a href="#">Privacy Policy</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
